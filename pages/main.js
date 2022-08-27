@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Image, Menu } from 'semantic-ui-react';
 
-export default Diff =() => (
+export default function Main() { 
     <>
   <Menu>
     <Container>
@@ -46,4 +46,4 @@ export default Diff =() => (
 
 
   </>
-);
+}
