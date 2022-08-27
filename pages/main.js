@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Image, Menu } from 'semantic-ui-react';
 
-export default () => (
+export default Diff =() => (
     <>
   <Menu>
     <Container>
