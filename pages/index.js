@@ -1,6 +1,9 @@
 import Head from 'next/head'
-import Image from 'next/image'
+//import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+const image ='https://images.pexels.com/photos/1172253/pexels-photo-1172253.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
+import { Button, Container, Divider, Grid, Header, Image, Menu, Segment , Card,Icon } from 'semantic-ui-react'
+import  Link from 'next/link'
 
 export default function Home() {
   return (
@@ -12,8 +15,117 @@ export default function Home() {
       </Head>
 
     <div>
-      <h1>hello next App</h1>
+      
+{/* - Fixed Bar----- */}
+
+<div>
+      {/* <Menu inverted fixed="top" borderless size="huge">
+        <Container>
+          <Image src={image} href="/home" />
+          <Menu.Item  icon="home" />
+          <Menu.Item  content="Vehicles" icon="car" />
+          <Menu.Item content="About Us" icon="question circle" />
+          <Menu.Item content="ADMİN PANEL" />
+          <Menu.Item position='right'>
+            <Button inverted color='red' >Sign up</Button>
+          </Menu.Item>
+          <Menu.Item>
+            <Button color='red'>Log-in</Button>
+          </Menu.Item>
+        </Container>
+      </Menu> */}
     </div>
-    </div>
+
+
+    <Container >
+      <h2>ABOUT US</h2>
+      <Segment basic size="tiny" color="black" />
+    </Container>
+
+    
+   </div>
+
+<>
+<Container>
+      <h2>ADMIN PANEL</h2>
+      <Segment basic size="tiny" color="black" />
+      
+      <Card.Group itemsPerRow={3}>
+        <Card color="red">
+          <Card.Content header="BRANDS"></Card.Content>
+          <Card.Content>
+            <Button circular color="red">
+              <Icon name="add" />
+              Add A Brand
+            </Button>
+            <br />
+            <br />
+            <Button  circular color="teal">
+              <Icon name="level up" />
+              Update A Brand
+            </Button>
+            <br />
+            <br />
+            <Button  circular color="red">
+              <Icon name="trash" />
+              Delete A Brand
+            </Button>
+          </Card.Content>
+        </Card>
+        <Card color="red">
+          <Card.Content header="CARS" />
+          <Card.Content>
+            <Button  circular color="green">
+              <Icon name="add" />
+              Add A Car
+            </Button>
+            <br />
+            <br />
+            <Button  circular color="teal">
+              <Icon name="level up" />
+              Update A Car
+            </Button>
+            <br />
+            <br />
+            <Button circular color="red">
+              <Icon name="trash" />
+              Delete A Car
+            </Button>
+          </Card.Content>
+        </Card>
+        <Card color="red">
+          <Card.Content header="COLORS" />
+          <Card.Content>
+            <Button  circular color="green">
+              <Icon name="add" />
+              Add A Color
+            </Button>
+            <br />
+            <br />
+            <Button  circular color="teal">
+              <Icon name="level up" />
+              Update A Color
+            </Button>
+            <br />
+            <br />
+            <Button  circular color="red">
+              <Icon name="trash" />
+              Delete A Color
+            </Button>
+          </Card.Content>
+        </Card>
+      </Card.Group>
+    </Container>
+</>
+
+
+
+
+   </div>
+
+
+
+   
+    
   )
 }

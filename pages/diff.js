@@ -340,6 +340,26 @@ const Contenedor = () => (
       </Menu>
     </div>
 
+{/* - Fixed Bar----- */}
+<div>
+      <Menu inverted fixed="top" borderless size="huge">
+        <Container>
+          <Image src={image} href="/home"/>
+          <Menu.Item  icon="home" />
+          <Menu.Item  content="Vehicles" icon="car" />
+          <Menu.Item content="About Us" icon="question circle" />
+          <Menu.Item content="ADMİN PANEL" />
+          <Menu.Item position='right'>
+            <Button inverted color='red' >Sign up</Button>
+          </Menu.Item>
+          <Menu.Item>
+            <Button color='red'>Log-in</Button>
+          </Menu.Item>
+        </Container>
+      </Menu>
+    </div>
+
+
 
 
   </Container>
