@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Image, Menu } from 'semantic-ui-react';
 
-export default function Main() { 
+const  Main= (props) => { 
     <>
   <Menu>
     <Container>
@@ -47,3 +47,6 @@ export default function Main() {
 
   </>
 }
+
+
+export default Main
