@@ -49,4 +49,4 @@ const Login = (props) => {
   </Grid>
 }
 
-export default Login
+export default Login;
