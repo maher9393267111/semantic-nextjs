@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Image, Menu } from 'semantic-ui-react';
 
-const  Main= (props) => { 
+const  Main= () => { 
     <>
   <Menu>
     <Container>
